@@ -22,7 +22,13 @@ import reducers from './reducers';
 
 // Views
 import Index from './views/Index/Index';
-import Home from './views/Home/Home';
+import Dashboard from './views/Dashboard/Dashboard';
+import Employees from './views/Employees/Employees';
+import Events from './views/Events/Events';
+import Knowledge from './views/Knowledge/Knowledge';
+import MySkills from './views/MySkills/MySkills';
+import Stats from './views/Stats/Stats';
+import Workshops from './views/Workshops/Workshops';
 
 // Main styles import.
 import './scss/global.scss';
@@ -39,7 +45,7 @@ const store = createStoreWithMiddleware(
 // WebFont Loader configuration.
 const config = {
   google: {
-    families: ['OpenSans:400,600,700:latin,latin-ext', 'Hind:400,600,700:latin,latin-ext'],
+    families: ['Roboto:300,400,500,700:latin,latin-ext'],
   },
 };
 
@@ -51,7 +57,13 @@ ReactDOM.render(
       <Router history={customHistory}>
         <Index>
           <Switch>
-            <Route path="/" component={Home} />
+            <Route path="/employees" component={Employees} />
+            <Route path="/events" component={Events} />
+            <Route path="/knowledge" component={Knowledge} />
+            <Route path="/myskills" component={MySkills} />
+            <Route path="/stats" component={Stats} />
+            <Route path="/workshops" component={Workshops} />
+            <Route path="/" component={Dashboard} />
           </Switch>
         </Index>
       </Router>
