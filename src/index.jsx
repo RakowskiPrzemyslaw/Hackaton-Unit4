@@ -29,6 +29,7 @@ import Knowledge from './views/Knowledge/Knowledge';
 import MySkills from './views/MySkills/MySkills';
 import Stats from './views/Stats/Stats';
 import Workshops from './views/Workshops/Workshops';
+import Login from './views/Login/Login';
 
 // Main styles import.
 import './scss/global.scss';
@@ -58,6 +59,7 @@ ReactDOM.render(
         <Index>
           <Switch>
             <Route path="/employees" component={Employees} />
+            <Route path="/login" component={Login} />
             <Route path="/events" component={Events} />
             <Route path="/knowledge" component={Knowledge} />
             <Route path="/myskills" component={MySkills} />

@@ -47,15 +47,9 @@ export default class Index extends Component {
 
   render() {
     return this.state.isLogin
-<<<<<<< HEAD
     ? (
         <Fragment>
-          <Login />
-=======
-      ? (
-        <Fragment>
           {this.props.children}
->>>>>>> master
         </Fragment>
       )
       : (

@@ -7,7 +7,7 @@ export const Background = styled.div`
   z-index: 1;
   width: 100vw;
   height: 100vh;
-  background-color: #096DD9;
+  background-color: #096dd9;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
