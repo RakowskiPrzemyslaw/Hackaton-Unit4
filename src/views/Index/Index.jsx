@@ -4,7 +4,8 @@ import bindActionCreators from 'redux/lib/bindActionCreators';
 import { withRouter } from 'react-router';
 import { Layout, Icon } from 'antd';
 import Menu from 'antd/es/menu';
-import { toggleSidebar } from '../../actions';
+import { toggleSidebar, fetchUser } from '../../actions';
+import { getCookie } from '../../utils/cookies';
 import { Container } from '../../utils/styledComponents';
 import  Login  from '../Login/Login';
 
@@ -17,7 +18,7 @@ const { Header, Content, Sider } = Layout;
   state => ({
     collapsed: state.ui.sidebar,
   }),
-  dispatch => bindActionCreators({ toggleSidebar }, dispatch),
+  dispatch => bindActionCreators({ toggleSidebar, fetchUser }, dispatch),
 )
 export default class Index extends Component {
   constructor(props) {
@@ -30,10 +31,24 @@ export default class Index extends Component {
   };
 
   componentWillMount() {
+    const id = getCookie('id');
+    if (id) {
+      this.props.fetchUser(id, () => {});
+        if (this.state.isLogin) {
+          this.setState({ isLogin: false });
+          this.props.history.push('/');
+        }
+    } else if (!this.state.isLogin) {
+      this.setState({ isLogin: true }, () => console.log('sdf'));
+      this.props.history.push('/login');
+    }
+
     this.props.history.listen((e) => {
+      console.log(1);
       if (e.pathname === '/login') {
         this.setState({ isLogin: true });
-      } else if (this.state.login) {
+      } else if (this.state.isLogin) {
+        console.log(2);
         this.setState({ isLogin: false });
       }
     });
