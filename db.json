@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "32453245",
+      "name": "Bradley Davis",
+      "position": "Fullstack developer",
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "email": "BradleyDavis@gmail.com",
+      "password": "12345678",
+      "isHR": false,
+      "skills": [
+        {
+          "name": "HTML",
+          "value": 5
+        },
+        {
+          "name": "CSS",
+          "value": 5
+        },
+        {
+          "name": "JavaScript",
+          "value": 4
+        },
+        {
+          "name": "PHP",
+          "value": 3
+        },
+        {
+          "name": "MySQL",
+          "value": 3
+        },
+        {
+          "name": "Mongo DB",
+          "value": 4
+        },
+        {
+          "name": "Node.js",
+          "value": 4
+        },
+        {
+          "name": "React",
+          "value": 2
+        },
+        {
+          "name": "Redux",
+          "value": 1
+        },
+        {
+          "name": "Angular 2/4",
+          "value": 3
+        },
+        {
+          "name": "Vue",
+          "value": 4
+        }
+      ],
+      "wantToLearn": ["React", "Redux", "Scrum"]
+    }
+  ]
+}

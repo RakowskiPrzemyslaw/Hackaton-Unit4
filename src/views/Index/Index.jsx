@@ -75,15 +75,15 @@ export default class Index extends Component {
                   <span>Dashboard</span>
                 </Item>
                 <Item key="/myskills">
-                  <Icon type="desktop" />
+                  <Icon type="area-chart" />
                   <span>My Skills</span>
                 </Item>
                 <Item key="/workshops">
-                  <Icon type="desktop" />
+                  <Icon type="solution" />
                   <span>Workshops</span>
                 </Item>
                 <Item key="/events">
-                  <Icon type="desktop" />
+                  <Icon type="calendar" />
                   <span>Events</span>
                 </Item>
                 <Item key="/knowledge">
@@ -92,7 +92,7 @@ export default class Index extends Component {
                 </Item>
                 <SubMenu
                   key="hrpanel"
-                  title={<span><Icon type="user" /><span>HR Panel</span></span>}
+                  title={<span><Icon type="team" /><span>HR Panel</span></span>}
                 >
                   <Item key="/employees">Employees</Item>
                   <Item key="/stats">Stats</Item>
