@@ -7,8 +7,6 @@ import Menu from 'antd/es/menu';
 import { toggleSidebar, fetchUser } from '../../actions';
 import { getCookie } from '../../utils/cookies';
 import { Container } from '../../utils/styledComponents';
-import  Login  from '../Login/Login';
-
 
 const { SubMenu, Item } = Menu;
 const { Header, Content, Sider } = Layout;

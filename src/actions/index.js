@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -12,12 +12,25 @@ export const fetchUser = (id, cb) => {
 
   return (dispatch) => {
     request.then(({ data }) => {
-      console.log(data)
       dispatch({
         type: FETCH_USER,
         payload: data,
       });
       cb();
+    });
+  };
+};
+
+export const getBoards = () => {
+  const url = `http://localhost:3000/boards`;
+  const request = axios.get(url);
+
+  return (dispatch) => {
+    request.then(({ data }) => {
+      dispatch({
+        type: GET_BOARDS,
+        payload: data,
+      });
     });
   };
 };
