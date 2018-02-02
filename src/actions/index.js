@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -33,4 +33,12 @@ export const getBoards = () => {
       });
     });
   };
+};
+
+export const changeSkillLevel = (name, value) => {
+  console.log(value);
+  return{
+    type: SKILL_CHANGE,
+    payload: { name, value },
+};
 };
