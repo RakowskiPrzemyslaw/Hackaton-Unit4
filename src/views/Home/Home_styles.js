@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { colors } from '../../utils/styles';
+import { colors, typography } from '../../utils/styles';
 
 export const Header = styled.h1`
-  margin: 30px 0 15px;
-  font-size: 30px;
-  color: ${colors.textColor};
+  margin: 45px 0 20px;
+  font-size: 24px;
+  color: ${colors.grey8};
+  font-weight: 600;
 `;
