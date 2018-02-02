@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import connect from 'react-redux/lib/connect/connect';
 import bindActionCreators from 'redux/lib/bindActionCreators';
 import { Layout, Icon } from 'antd';
@@ -16,8 +16,28 @@ const { Header, Content, Sider } = Layout;
   dispatch => bindActionCreators({ toggleSidebar }, dispatch),
 )
 export default class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.lastPathname = '';
+  }
+
+  state = {
+    isLogin: this.props.location.pathname === '/login',
+  };
+
+  componentWillMount() {
+    this.props.history.listen((e) => {
+      if (e.pathname === '/login') {
+        this.setState({ isLogin: true });
+      } else if (this.state.login) {
+        this.setState({ isLogin: false });
+      }
+    });
+  }
+
   render() {
-    return (
+    return this.state.isLogin
+    ? (
       <Layout style={{ minHeight: '100vh' }}>
         <Header className="header">
           <div className="logo" />
@@ -69,6 +89,11 @@ export default class Index extends Component {
           </Layout>
         </Layout>
       </Layout>
-    );
+      )
+      : (
+        <Fragment>
+          {this.props.children}
+        </Fragment>
+      );
   }
 }
