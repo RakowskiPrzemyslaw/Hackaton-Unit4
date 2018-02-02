@@ -22,7 +22,7 @@ export const fetchUser = (id, cb) => {
 };
 
 export const getBoards = () => {
-  const url = `http://localhost:3000/boards`;
+  const url = 'http://localhost:3000/boards';
   const request = axios.get(url);
 
   return (dispatch) => {

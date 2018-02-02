@@ -22,3 +22,5 @@ export const typography = {
   mainFamily: '\'Roboto\', \'Arial\', sans-serif',
   mainWeight: 300,
 };
+
+export const boxShadow = '0 0 2px 1px rgba(188, 188, 188, 0.2)';
