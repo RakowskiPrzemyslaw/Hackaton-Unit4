@@ -121,3 +121,14 @@ export const Name = styled.div`
   color: ${colors.grey5};
   font-weight: 400;
 `;
+
+export const Filter = styled.div`
+  margin-bottom: 30px;
+`;
+
+export const FilterText = styled.div`
+  font-size: 14px;
+  color: ${colors.color5};
+  font-weight: 500;
+  margin-bottom: 5px;
+`;
