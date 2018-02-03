@@ -51,7 +51,7 @@ export default class Events extends Component {
             </Row>
           </Left>
           <Right>
-            <Button type="primary">Details</Button>
+            <Button onClick={() => { window.open(event.url, '_blank'); }} type="primary">Details</Button>
           </Right>
         </Bottom>
       </Event>

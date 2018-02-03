@@ -16,7 +16,7 @@
       "skills": [
         {
           "name": "HTML",
-          "value": 3
+          "value": 5
         },
         {
           "name": "CSS",
@@ -24,11 +24,11 @@
         },
         {
           "name": "JavaScript",
-          "value": 4
+          "value": 3
         },
         {
           "name": "PHP",
-          "value": 3
+          "value": 4
         },
         {
           "name": "MySQL",
@@ -61,13 +61,18 @@
         {
           "name": "Python",
           "value": 3
+        },
+        {
+          "name": "Java",
+          "value": 3
         }
       ],
       "wantToLearn": [
         "React",
         "Redux",
         "Scrum",
-        "PHP"
+        "PHP",
+        "JavaScript"
       ]
     },
     {

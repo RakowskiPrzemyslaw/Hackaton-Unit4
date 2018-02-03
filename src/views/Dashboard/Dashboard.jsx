@@ -47,7 +47,7 @@ export default class Dashboard extends Component {
         <Right>
           <Top>
             <Title>{board.name}</Title>
-            <Heart><i className={isFavourite ? 'fas fa-heart' : 'far fa-heart'} /></Heart>
+            <Heart><i className="fas fa-heart" /></Heart>
           </Top>
           <Bottom>
             <Author>
