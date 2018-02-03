@@ -88,12 +88,11 @@ export default class MySkills extends Component {
 
 
         <Modal
-          title="Basic Modal"
+          title="Add your skills"
           visible={this.state.visible1}
           onOk={this.handleOk1}
           onCancel={this.handleCancel1}
         >
-          <p>Pick your skill</p>
           <Select
             showSearch
             style={{ width: 200 }}
@@ -103,22 +102,21 @@ export default class MySkills extends Component {
           >
             {skillList.map(skill => <Option {...skill} value={skill} key={skill}>{skill}</Option> )}
           </Select>
-          <p>Pick your level</p>
+          <p>Pick level of your skill</p>
           <Slider min={1} max={5} onChange={this.onSliderChange} value={this.state.sliderValue} />
 
         </Modal>
 
         <Modal
-          title="Basic Modal"
+          title="What you want to learn"
           visible={this.state.visible2}
           onOk={this.handleOk2}
           onCancel={this.handleCancel2}
         >
-          <p>Select what you want to Learn</p>
           <Select
             showSearch
             style={{ width: 200 }}
-            placeholder="Select what you want to learn"
+            placeholder="Select what you want to learn?"
             optionFilterProp="children"
             filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
           >
