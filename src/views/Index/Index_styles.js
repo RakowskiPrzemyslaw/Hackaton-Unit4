@@ -18,3 +18,27 @@ export const Body = styled(Scrollbars)`
   overflow-x: hidden;
   overflow-y: auto;
 `;
+export const Logo = styled.img`
+  margin-top: 10px;
+  height: 40px;
+`;
+
+export const ProfilePic = styled.img`
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: auto;
+`;
+
+export const ProfileName = styled.h1`
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+`;
+
+export const Profile = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+`;

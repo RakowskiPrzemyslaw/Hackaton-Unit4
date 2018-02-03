@@ -51,7 +51,7 @@ export const Skill = styled.div`
   color: gray;
   border-radius: 50px;
   font-size: 10px;
-  float:left;
+  float: left;
   padding: 10px;
   margin: 5px;
 `;

@@ -2,11 +2,12 @@ import React, { Component, Fragment } from 'react';
 import connect from 'react-redux/lib/connect/connect';
 import bindActionCreators from 'redux/lib/bindActionCreators';
 import { withRouter } from 'react-router';
-import { Layout, Icon } from 'antd';
+import { Layout, Icon, Button } from 'antd';
 import Menu from 'antd/es/menu';
 import { toggleSidebar, fetchUser } from '../../actions';
 import { getCookie } from '../../utils/cookies';
 import { Container } from '../../utils/styledComponents';
+import { Logo, ProfilePic, ProfileName, Profile } from './Index_styles';
 
 const { SubMenu, Item } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -15,6 +16,7 @@ const { Header, Content, Sider } = Layout;
 @connect(
   state => ({
     collapsed: state.ui.sidebar,
+    user: state.user
   }),
   dispatch => bindActionCreators({ toggleSidebar, fetchUser }, dispatch),
 )
@@ -57,6 +59,7 @@ export default class Index extends Component {
   }
 
   render() {
+    console.log(this.props.user);
     return this.state.isLogin
     ? (
         <Fragment>
@@ -66,7 +69,13 @@ export default class Index extends Component {
       : (
         <Layout style={{ minHeight: '100vh' }}>
           <Header className="header">
-            <div className="logo" />
+            <Logo src="img/logo.svg" />
+            <Profile>
+              <ProfilePic src={this.props.user.image} />
+              <ProfileName>{this.props.user.name}</ProfileName>
+              <Button type='dashed'>Logout</Button>
+            </Profile>
+
           </Header>
           <Layout>
             <Sider

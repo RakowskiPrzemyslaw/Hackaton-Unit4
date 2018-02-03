@@ -59,18 +59,15 @@
           "value": 4
         },
         {
-          "name": "C++"
-        },
-        {
-          "name": "Marketing",
-          "value": 4
+          "name": "Python",
+          "value": 3
         }
       ],
       "wantToLearn": [
         "React",
         "Redux",
         "Scrum",
-        "Java"
+        "PHP"
       ]
     },
     {
