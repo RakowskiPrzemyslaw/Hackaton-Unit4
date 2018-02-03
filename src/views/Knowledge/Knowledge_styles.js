@@ -5,7 +5,6 @@ export const Boards = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 `;
 
 export const Container = styled.div`
@@ -16,11 +15,27 @@ export const Container = styled.div`
   background-color: #fff;
   box-shadow: ${boxShadow};
   transition: all 0.3s;
-  margin-bottom: 30px;
+  margin: 15px;
 
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 15px 1px rgba(188, 188, 188, 0.3);
+  }
+
+  @media (max-width: 1700px) {
+    width: 350px;
+  }
+
+  @media (max-width: 1400px) {
+    width: 420px;
+  }
+
+  @media (max-width: 1160px) {
+    width: 310px;
+  }
+
+  @media (max-width: 940px) {
+    width: 100%;
   }
 `;
 
@@ -31,6 +46,10 @@ export const Icon = styled.div`
   width: 100px;
   height: 100px;
   border-right: 1px solid ${colors.color2};
+
+  @media (max-width: 1700px) {
+    width: 70px;
+  }
 
   svg,
   path {
@@ -45,6 +64,10 @@ export const Right = styled.div`
   flex-direction: column;
   padding: 20px;
   width: calc(100% - 100px);
+
+  @media (max-width: 1700px) {
+    width: calc(100% - 70px);
+  }
 `;
 
 export const Top = styled.div`
@@ -58,6 +81,10 @@ export const Title = styled.div`
   font-size: 18px;
   font-weight: 500;
   color: ${colors.grey8};
+
+  @media (max-width: 1160px) {
+    font-size: 15px;
+  }
 `;
 
 export const Heart = styled.div`

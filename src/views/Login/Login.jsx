@@ -34,6 +34,11 @@ export default class Login extends Component {
         setCookie('id', '32453245');
         this.props.history.push('/');
       });
+    } else if (this.state.userName === 'evafernandez@gmail.com') {
+      this.props.fetchUser('21309812', () => {
+        setCookie('id', '21309812');
+        this.props.history.push('/');
+      });
     }
   }
 

@@ -1,18 +1,29 @@
 import React, { Component, Fragment } from 'react';
 import connect from 'react-redux/lib/connect/connect';
+import bindActionCreators from 'redux/lib/bindActionCreators';
+import axios from 'axios';
 import { Modal, Select, Slider, Icon } from 'antd';
 import { Header } from '../../utils/styledComponents';
 import { StyledButton, WantToLearn, WantToLearnButton } from './MySkills_styles';
 import Skill from '../../components/Skill/Skill';
-import axios from 'axios';
+import { addWant, addSkill } from '../../actions';
 import { skillList } from './SkillList';
 
 const Option = Select.Option;
 
 // import { Header } from './MySkills_styles';
-
-@connect(state => ({ user: state.user }))
+@connect(
+  state => ({ user: state.user }),
+  dispatch => bindActionCreators({ addWant, addSkill }, dispatch),
+)
 export default class MySkills extends Component {
+  state = {
+    visible1: false,
+    visible2: false,
+    sliderValue: 0,
+    wantLearn: null,
+    skill: null,
+  }
 
   renderSkill = (skill, i) => <Skill {...skill} updateUser={this.updateUser} key={skill.name} />;
   renderWantToLearn = (Wtl, i) => <WantToLearn {...Wtl} key={Wtl}>{Wtl}</WantToLearn>;
@@ -23,7 +34,6 @@ export default class MySkills extends Component {
     axios.put(url, x);
   }
 
-  state = { visible1: false, visible2: false, sliderValue: 0, }
   showModal1 = () => {
     this.setState({
       visible1: true,
@@ -37,7 +47,10 @@ export default class MySkills extends Component {
   }
 
   handleOk1 = (e) => {
-    console.log(e);
+    this.props.addSkill({
+      name: this.state.skill,
+      value: this.state.sliderValue,
+    }, this.updateUser);
     this.setState({
       visible1: false,
     });
@@ -56,17 +69,25 @@ export default class MySkills extends Component {
   }
 
   handleOk2 = (e) => {
-    console.log(e);
+    this.props.addWant(this.state.wantLearn, this.updateUser);
     this.setState({
       visible2: false,
     });
   }
   handleCancel2 = (e) => {
-    console.log(e);
     this.setState({
       visible2: false,
     });
   }
+
+  handleWantChange = (val) => {
+    this.setState({ wantLearn: val });
+  }
+
+  handleSkillChange = (val) => {
+    this.setState({ skill: val });
+  }
+
   render() {
     const min = 0;
     const max = 5;
@@ -75,13 +96,13 @@ export default class MySkills extends Component {
     const preColor = sliderValue >= mid ? '' : 'rgba(0, 0, 0, .45)';
     const nextColor = sliderValue >= mid ? 'rgba(0, 0, 0, .45)' : '';
 
-    console.log(this.props.user);
     return this.props.user.id
     ? (
       <Fragment>
         <Header>My Skills</Header>
         {this.props.user.skills.map(this.renderSkill)}
         <StyledButton type="dashed" onClick={this.showModal1}>Add Skill</StyledButton>
+        <div style={{ clear: 'both' }} />
         <Header>Want to learn</Header>
         {this.props.user.wantToLearn.map(this.renderWantToLearn)}
         <WantToLearnButton type="dashed" onClick={this.showModal2}>Add</WantToLearnButton>
@@ -95,9 +116,10 @@ export default class MySkills extends Component {
         >
           <Select
             showSearch
-            style={{ width: 200 }}
+            style={{ width: '100%', marginBottom: 20 }}
             placeholder="Select your skills"
             optionFilterProp="children"
+            onChange={this.handleSkillChange}
             filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
           >
             {skillList.map(skill => <Option {...skill} value={skill} key={skill}>{skill}</Option> )}
@@ -115,16 +137,15 @@ export default class MySkills extends Component {
         >
           <Select
             showSearch
-            style={{ width: 200 }}
+            style={{ width: '100%' }}
             placeholder="Select what you want to learn?"
             optionFilterProp="children"
+            onChange={this.handleWantChange}
             filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
           >
             {skillList.map(skill => <Option {...skill} value={skill}>{skill}</Option> )}
           </Select>
-          <p>Some contents2...</p>
         </Modal>
-
 
       </Fragment>
     ) : null;
