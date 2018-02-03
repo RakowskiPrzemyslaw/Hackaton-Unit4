@@ -28,7 +28,7 @@ export const Container = styled.div`
       }
     `
   : `
-      width: 1740px;
+      width: 1540px;
       margin: 0 auto;
 
       @media (max-width: 1800px) {

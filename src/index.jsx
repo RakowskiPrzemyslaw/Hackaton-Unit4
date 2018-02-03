@@ -26,6 +26,7 @@ import Dashboard from './views/Dashboard/Dashboard';
 import Employees from './views/Employees/Employees';
 import Events from './views/Events/Events';
 import Knowledge from './views/Knowledge/Knowledge';
+import Board from './views/Board/Board';
 import MySkills from './views/MySkills/MySkills';
 import Stats from './views/Stats/Stats';
 import Workshops from './views/Workshops/Workshops';
@@ -61,6 +62,7 @@ ReactDOM.render(
             <Route path="/employees" component={Employees} />
             <Route path="/login" component={Login} />
             <Route path="/events" component={Events} />
+            <Route path="/knowledge/:id" component={Board} />
             <Route path="/knowledge" component={Knowledge} />
             <Route path="/myskills" component={MySkills} />
             <Route path="/stats" component={Stats} />

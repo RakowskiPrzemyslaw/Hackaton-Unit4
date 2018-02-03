@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE,FETCH_USER_LIST } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE,FETCH_USER_LIST, ADD_BOOKMARK } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -22,7 +22,7 @@ export const fetchUser = (id, cb) => {
 };
 
 export const getBoards = () => {
-  const url = `http://localhost:3000/boards`;
+  const url = 'http://localhost:3000/boards';
   const request = axios.get(url);
 
   return (dispatch) => {
@@ -32,6 +32,18 @@ export const getBoards = () => {
         payload: data,
       });
     });
+  };
+};
+
+
+export const addBookmark = (boardId, categoryName, bookmark) => {
+  return {
+    type: ADD_BOOKMARK,
+    payload: {
+      boardId,
+      categoryName,
+      bookmark,
+    },
   };
 };
 
