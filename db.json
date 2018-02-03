@@ -33,7 +33,7 @@
         },
         {
           "name": "MySQL",
-          "value": 3
+          "value": 2
         },
         {
           "name": "Mongo DB",
@@ -45,15 +45,15 @@
         },
         {
           "name": "React",
-          "value": 2
-        },
-        {
-          "name": "Redux",
           "value": 1
         },
         {
+          "name": "Redux",
+          "value": 4
+        },
+        {
           "name": "Angular 2/4",
-          "value": 3
+          "value": 4
         },
         {
           "name": "Vue",

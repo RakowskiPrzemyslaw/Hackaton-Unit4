@@ -1,10 +1,14 @@
 import React, { Component, Fragment } from 'react';
 import connect from 'react-redux/lib/connect/connect';
-import { Modal } from 'antd';
+import { Modal, Select, Slider, Icon } from 'antd';
 import { Header } from '../../utils/styledComponents';
 import { StyledButton, WantToLearn, WantToLearnButton } from './MySkills_styles';
 import Skill from '../../components/Skill/Skill';
 import axios from 'axios';
+import { skillList } from './SkillList';
+
+const Option = Select.Option;
+
 // import { Header } from './MySkills_styles';
 
 @connect(state => ({ user: state.user }))
@@ -19,48 +23,108 @@ export default class MySkills extends Component {
     axios.put(url, x);
   }
 
-  state = { visible: false }
-  showModal = () => {
+  state = { visible1: false, visible2: false, sliderValue: 0, }
+  showModal1 = () => {
     this.setState({
-      visible: true,
+      visible1: true,
     });
   }
 
-  handleOk = (e) => {
-    console.log(e);
+  onSliderChange = (value) => {
     this.setState({
-      visible: false,
-    });
-  }
-  handleCancel = (e) => {
-    console.log(e);
-    this.setState({
-      visible: false,
+      sliderValue: value,
     });
   }
 
+  handleOk1 = (e) => {
+    console.log(e);
+    this.setState({
+      visible1: false,
+    });
+  }
+  handleCancel1 = (e) => {
+    console.log(e);
+    this.setState({
+      visible1: false,
+    });
+  }
+
+  showModal2 = () => {
+    this.setState({
+      visible2: true,
+    });
+  }
+
+  handleOk2 = (e) => {
+    console.log(e);
+    this.setState({
+      visible2: false,
+    });
+  }
+  handleCancel2 = (e) => {
+    console.log(e);
+    this.setState({
+      visible2: false,
+    });
+  }
   render() {
+    const min = 0;
+    const max = 5;
+    const { sliderValue } = this.state;
+    const mid = ((max - min) / 2).toFixed(1);
+    const preColor = sliderValue >= mid ? '' : 'rgba(0, 0, 0, .45)';
+    const nextColor = sliderValue >= mid ? 'rgba(0, 0, 0, .45)' : '';
+
     console.log(this.props.user);
     return this.props.user.id
     ? (
       <Fragment>
-        <Header>MySkills</Header>
+        <Header>My Skills</Header>
         {this.props.user.skills.map(this.renderSkill)}
-        <StyledButton type="dashed">Add Skill</StyledButton>
+        <StyledButton type="dashed" onClick={this.showModal1}>Add Skill</StyledButton>
         <Header>Want to learn</Header>
         {this.props.user.wantToLearn.map(this.renderWantToLearn)}
-        <WantToLearnButton type="dashed">Add</WantToLearnButton>
+        <WantToLearnButton type="dashed" onClick={this.showModal2}>Add</WantToLearnButton>
 
 
         <Modal
           title="Basic Modal"
-          visible={this.state.visible}
-          onOk={this.handleOk}
-          onCancel={this.handleCancel}
+          visible={this.state.visible1}
+          onOk={this.handleOk1}
+          onCancel={this.handleCancel1}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <p>Pick your skill</p>
+          <Select
+            showSearch
+            style={{ width: 200 }}
+            placeholder="Select your skills"
+            optionFilterProp="children"
+            filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          >
+            {skillList.map(skill => <Option {...skill} value={skill} key={skill}>{skill}</Option> )}
+          </Select>
+          <p>Pick your level</p>
+          <Slider min={1} max={5} onChange={this.onSliderChange} value={this.state.sliderValue} />
+
+        </Modal>
+
+        <Modal
+          title="Basic Modal"
+          visible={this.state.visible2}
+          onOk={this.handleOk2}
+          onCancel={this.handleCancel2}
+        >
+          <p>Select what you want to Learn</p>
+          <Select
+            showSearch
+            style={{ width: 200 }}
+            placeholder="Select what you want to learn"
+            optionFilterProp="children"
+            filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
+          >
+            {skillList.map(skill => <Option {...skill} value={skill}>{skill}</Option> )}
+          </Select>
+          <p>Some contents2...</p>
         </Modal>
 
 
