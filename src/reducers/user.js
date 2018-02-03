@@ -3,7 +3,7 @@ import { FETCH_USER, SKILL_CHANGE, ADD_WANT, ADD_SKILL } from '../actions/types'
 export default function (state = {}, action) {
   switch (action.type) {
     case FETCH_USER: {
-      return action.payload
+      return action.payload;
     }
     case ADD_WANT: {
       const user = { ...state, wantToLearn: [...state.wantToLearn, action.payload.skill] };

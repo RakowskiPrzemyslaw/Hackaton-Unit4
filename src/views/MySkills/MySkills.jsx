@@ -96,13 +96,13 @@ export default class MySkills extends Component {
     const preColor = sliderValue >= mid ? '' : 'rgba(0, 0, 0, .45)';
     const nextColor = sliderValue >= mid ? 'rgba(0, 0, 0, .45)' : '';
 
-    console.log(this.props.user);
     return this.props.user.id
     ? (
       <Fragment>
         <Header>My Skills</Header>
         {this.props.user.skills.map(this.renderSkill)}
         <StyledButton type="dashed" onClick={this.showModal1}>Add Skill</StyledButton>
+        <div style={{ clear: 'both' }} />
         <Header>Want to learn</Header>
         {this.props.user.wantToLearn.map(this.renderWantToLearn)}
         <WantToLearnButton type="dashed" onClick={this.showModal2}>Add</WantToLearnButton>

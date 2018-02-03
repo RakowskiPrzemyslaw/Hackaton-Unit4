@@ -6,7 +6,6 @@ export const Categories = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: flex-start;
 `;
 
@@ -18,7 +17,23 @@ export const Category = styled.div`
   background-color: #fff;
   box-shadow: ${boxShadow};
   transition: all 0.3s;
-  margin-bottom: 30px;
+  margin: 15px;
+
+  @media (max-width: 1700px) {
+    width: 350px;
+  }
+
+  @media (max-width: 1400px) {
+    width: 420px;
+  }
+
+  @media (max-width: 1160px) {
+    width: 310px;
+  }
+
+  @media (max-width: 940px) {
+    width: 100%;
+  }
 `;
 
 export const CategoryTitle = styled.div`
