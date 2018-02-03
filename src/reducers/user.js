@@ -12,7 +12,9 @@ export default function(state = {}, action){
         }
         return skill;
       });
-      return {...state, skills};
+      const user = {...state, skills}
+      action.payload.cb(user);
+      return user;
     }
     default: {
      return state;

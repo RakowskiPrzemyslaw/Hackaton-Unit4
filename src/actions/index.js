@@ -35,10 +35,10 @@ export const getBoards = () => {
   };
 };
 
-export const changeSkillLevel = (name, value) => {
+export const changeSkillLevel = (name, value, cb) => {
   console.log(value);
   return{
     type: SKILL_CHANGE,
-    payload: { name, value },
+    payload: { name, value, cb },
 };
 };
