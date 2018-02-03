@@ -75,28 +75,25 @@ export default class Knowledge extends Component {
   }
 
   render() {
-    if (this.state.boards.length > 0) {
-      return (
-        <Fragment>
-          <Header>Knowledge</Header>
-          <Filter>
-            <FilterText>Ogranicz do konkretnych umiejętności</FilterText>
-            <Select
-              allowClear
-              onChange={this.handleChange}
-              mode="multiple"
-              style={{ width: '100%' }}
-              placeholder="Wpisz nazwy umiejętności"
-            >
-              {this.state.options}
-            </Select>
-          </Filter>
-          <Boards>
-            {this.state.boards.map(this.renderBoard)}
-          </Boards>
-        </Fragment>
-      );
-    }
-    return null;
+    return (
+      <Fragment>
+        <Header>Knowledge</Header>
+        <Filter>
+          <FilterText>Ogranicz do konkretnych umiejętności</FilterText>
+          <Select
+            allowClear
+            onChange={this.handleChange}
+            mode="multiple"
+            style={{ width: '100%' }}
+            placeholder="Wpisz nazwy umiejętności"
+          >
+            {this.state.options}
+          </Select>
+        </Filter>
+        <Boards>
+          {this.state.boards.length > 0 && this.state.boards.map(this.renderBoard)}
+        </Boards>
+      </Fragment>
+    );
   }
 }
