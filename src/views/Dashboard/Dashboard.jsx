@@ -6,10 +6,6 @@ import { addWant, addSkill, getBoards } from '../../actions';
 import Skill from '../../components/Skill/Skill';
 import { Boards, Container, Icon, Right, Top, Title, Heart, Bottom, Author, Image, Name, Filter, FilterText } from '../Knowledge/Knowledge_styles';
 
-
-
-// import { Header } from './Dashboard_styles';
-
 @connect(
   state => ({ user: state.user, boards: state.boards }),
   dispatch => bindActionCreators({ addWant, addSkill, getBoards }, dispatch),
