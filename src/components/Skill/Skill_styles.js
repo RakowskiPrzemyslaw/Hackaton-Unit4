@@ -6,7 +6,7 @@ export const SkillTitle = styled.h1`
 `;
 
 export const SkillContainer = styled.div`
-  width: calc(33.3% - 30px);
+  width: calc(33.3% - 20px);
   float: left;
   padding: 10px;
   margin: 10px;

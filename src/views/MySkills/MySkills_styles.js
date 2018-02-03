@@ -11,7 +11,7 @@ export const Header = styled.h1`
 `;
 
 export const StyledButton = styled(Button)`
-  width: calc(33.3% - 30px);
+  width: calc(33.3% - 20px);
   height: 113px;
   float: left;
   padding: 10px;
