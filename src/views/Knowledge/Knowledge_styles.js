@@ -16,6 +16,7 @@ export const Container = styled.div`
   background-color: #fff;
   box-shadow: ${boxShadow};
   transition: all 0.3s;
+  margin-bottom: 30px;
 
   &:hover {
     cursor: pointer;

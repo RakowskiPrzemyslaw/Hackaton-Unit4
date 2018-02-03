@@ -19,7 +19,7 @@ export default class Knowledge extends Component {
 
   renderBoard = (board, i) => {
     return (
-      <Container onClick={() => { this.props.history.push(`/boards/${board.id}`); }}>
+      <Container onClick={() => { this.props.history.push(`/knowledge/${board.id}`); }}>
         <Icon>
           <i className={`fas fa-${board.icon}`} />
         </Icon>

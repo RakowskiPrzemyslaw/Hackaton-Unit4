@@ -1,498 +1,856 @@
 {
-  "users": [
-    {
-      "id": "32453245",
-      "name": "Bradley Davis",
-      "position": "Fullstack developer",
-      "image": "https://randomuser.me/api/portraits/men/3.jpg",
-      "email": "BradleyDavis@gmail.com",
-      "password": "12345678",
-      "favouriteBoards": [
-        "10",
-        "2",
-        "3",
-        "4"
-      ],
-      "isHR": false,
-      "skills": [
-        {
-          "name": "HTML",
-          "value": 5
-        },
-        {
-          "name": "CSS",
-          "value": 5
-        },
-        {
-          "name": "JavaScript",
-          "value": 4
-        },
-        {
-          "name": "PHP",
-          "value": 3
-        },
-        {
-          "name": "MySQL",
-          "value": 3
-        },
-        {
-          "name": "Mongo DB",
-          "value": 4
-        },
-        {
-          "name": "Node.js",
-          "value": 4
-        },
-        {
-          "name": "React",
-          "value": 2
-        },
-        {
-          "name": "Redux",
-          "value": 1
-        },
-        {
-          "name": "Angular 2/4",
-          "value": 3
-        },
-        {
-          "name": "Vue",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "React",
-        "Redux",
-        "Scrum"
-      ]
-    },
-    {
-      "id": "32451235",
-      "name": "Thomas Brown",
-      "position": "Frontend Developer",
-      "image": "https://randomuser.me/api/portraits/men/83.jpg",
-      "email": "thomas.brown@gmail.com",
-      "password": "12390412",
-      "favouriteBoards": [
-        "8",
-        "1",
-        "2",
-        "5"
-      ],
-      "isHR": false,
-      "skills": [
-        {
-          "name": "JavaScript",
-          "value": 4
-        },
-        {
-          "name": "CSS",
-          "value": 5
-        },
-        {
-          "name": "Vue",
-          "value": 4
-        },
-        {
-          "name": "Redux",
-          "value": 2
-        },
-        {
-          "name": "React",
-          "value": 2
-        }
-      ],
-      "wantToLearn": [
-        "React",
-        "Redux",
-        "Angular 2/4"
-      ]
-    },
-    {
-      "id": "12304925",
-      "name": "Katherine Steward",
-      "position": "Backend Developer",
-      "image": "https://randomuser.me/api/portraits/women/4.jpg",
-      "email": "katherinesteward@gmail.com",
-      "password": "78391821",
-      "favouriteBoards": [
-        "5",
-        "6",
-        "2",
-        "1"
-      ],
-      "isHR": false,
-      "skills": [
-        {
-          "name": "Node.js",
-          "value": 5
-        },
-        {
-          "name": "Mongo DB",
-          "value": 5
-        },
-        {
-          "name": "PHP",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "PHP",
-        "Python",
-        "C++"
-      ]
-    },
-    {
-      "id": "68942093",
-      "name": "Vanessa Bates",
-      "position": "Project Manager",
-      "image": "https://randomuser.me/api/portraits/women/18.jpg",
-      "email": "vanessabates@gmail.com",
-      "password": "28031092",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "SCRUM",
-          "value": 5
-        },
-        {
-          "name": "Agile",
-          "value": 5
-        },
-        {
-          "name": "Presentation",
-          "value": 4
-        },
-        {
-          "name": "Consulting",
-          "value": 3
-        }
-      ],
-      "wantToLearn": [
-        "Presentation",
-        "Consulting",
-        "Administrative"
-      ]
-    },
-    {
-      "id": "21309812",
-      "name": "Eva Fernandez",
-      "position": "HR Manager",
-      "image": "https://randomuser.me/api/portraits/women/1.jpg",
-      "email": "evafernandez@gmail.com",
-      "password": "0921381",
-      "favouriteBoards": [
-        "7",
-        "1",
-        "6",
-        "3"
-      ],
-      "isHR": true,
-      "skills": [
-        {
-          "name": "Recruitment",
-          "value": 5
-        },
-        {
-          "name": "Employer Branding",
-          "value": 3
-        },
-        {
-          "name": "Talent Management",
-          "value": 4
-        },
-        {
-          "name": "Onboarding",
-          "value": 3
-        },
-        {
-          "name": "Negotiations",
-          "value": 3
-        },
-        {
-          "name": "PR",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "Talent Management",
-        "Negotiations",
-        "Employer Branding"
-      ]
-    },
-    {
-      "id": "2309831",
-      "name": "Anthony Lewis",
-      "position": "Project Manager",
-      "image": "https://randomuser.me/api/portraits/men/38.jpg",
-      "email": "anthonylewis@gmail.com",
-      "password": "21083721",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "SCRUM",
-          "value": 3
-        },
-        {
-          "name": "Agile",
-          "value": 2
-        },
-        {
-          "name": "Presentation",
-          "value": 5
-        },
-        {
-          "name": "Consulting",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "Agile",
-        "SCRUM",
-        "Consulting"
-      ]
-    },
-    {
-      "id": "2309831",
-      "name": "Terri Andrews",
-      "position": "SCRUM Master",
-      "image": "https://randomuser.me/api/portraits/women/49.jpg",
-      "email": "terriandrews@gmail.com",
-      "password": "43081293",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "SCRUM",
-          "value": 5
-        },
-        {
-          "name": "Agile",
-          "value": 4
-        },
-        {
-          "name": "Presentation",
-          "value": 2
-        },
-        {
-          "name": "Consulting",
-          "value": 3
-        }
-      ],
-      "wantToLearn": [
-        "Presentation",
-        "Consulting"
-      ]
-    },
-    {
-      "id": "2309831",
-      "name": "Bob Robrets",
-      "position": "Fullstack Developer",
-      "image": "https://randomuser.me/api/portraits/men/68.jpg",
-      "email": "bobroberts@gmail.com",
-      "password": "79837182",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "HTML",
-          "value": 5
-        },
-        {
-          "name": "JavaScript",
-          "value": 4
-        },
-        {
-          "name": "React",
-          "value": 5
-        },
-        {
-          "name": "Vue",
-          "value": 4
-        },
-        {
-          "name": "CSS",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "JavaScript",
-        "React",
-        "Vue"
-      ]
-    },
-    {
-      "id": "2309831",
-      "name": "Tony Larson",
-      "position": "Mobile Developer",
-      "image": "https://randomuser.me/api/portraits/men/68.jpg",
-      "email": "tonylarson@gmail.com",
-      "password": "3801922",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "Mobile Development",
-          "value": 5
-        },
-        {
-          "name": "React",
-          "value": 4
-        },
-        {
-          "name": "UI/UX",
-          "value": 5
-        },
-        {
-          "name": "Vue",
-          "value": 4
-        },
-        {
-          "name": "CSS",
-          "value": 3
-        }
-      ],
-      "wantToLearn": [
-        "Mobile Development",
-        "React",
-        "Vue"
-      ]
-    },
-    {
-      "id": "2309816",
-      "name": "Brandie Crawford",
-      "position": "Marketing Manager",
-      "image": "https://randomuser.me/api/portraits/women/98.jpg",
-      "email": "brandiecrawford@gmail.com",
-      "password": "79383471",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "Marketing",
-          "value": 5
-        },
-        {
-          "name": "Copywriting",
-          "value": 4
-        },
-        {
-          "name": "Content Management",
-          "value": 3
-        },
-        {
-          "name": "Event Management",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "Copywriting",
-        "Content Management"
-      ]
-    },
-    {
-      "id": "2309831",
-      "name": "Mike Cole",
-      "position": "Backend Developer",
-      "image": "https://randomuser.me/api/portraits/men/29.jpg",
-      "email": "mikecole@gmail.com",
-      "password": "2313981",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "Node.js",
-          "value": 5
-        },
-        {
-          "name": "Java",
-          "value": 2
-        },
-        {
-          "name": "Mongo DB",
-          "value": 2
-        },
-        {
-          "name": "PHP",
-          "value": 3
-        }
-      ],
-      "wantToLearn": [
-        "PHP",
-        "Java",
-        "Mongo DB"
-      ]
-    },
-    {
-      "id": "2837102",
-      "name": "Anthony Lee",
-      "position": "Frontend Developent",
-      "image": "https://randomuser.me/api/portraits/men/59.jpg",
-      "email": "anthonylee@gmail.com",
-      "password": "42084177",
-      "isHR": false,
-      "skills": [
-        {
-          "name": "React",
-          "value": 5
-        },
-        {
-          "name": "JavaScript",
-          "value": 4
-        },
-        {
-          "name": "CSS",
-          "value": 3
-        },
-        {
-          "name": "HTML",
-          "value": 4
-        }
-      ],
-      "wantToLearn": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }
+	"users": [{
+			"id": "32453245",
+			"name": "Bradley Davis",
+			"position": "Fullstack developer",
+			"image": "https://randomuser.me/api/portraits/men/3.jpg",
+			"email": "BradleyDavis@gmail.com",
+			"password": "12345678",
+			"favouriteBoards": [
+				"1",
+				"3",
+				"4"
+			],
+			"isHR": false,
+			"skills": [{
+					"name": "HTML",
+					"value": 5
+				},
+				{
+					"name": "CSS",
+					"value": 5
+				},
+				{
+					"name": "JavaScript",
+					"value": 4
+				},
+				{
+					"name": "PHP",
+					"value": 3
+				},
+				{
+					"name": "MySQL",
+					"value": 3
+				},
+				{
+					"name": "Mongo DB",
+					"value": 4
+				},
+				{
+					"name": "Node.js",
+					"value": 4
+				},
+				{
+					"name": "React",
+					"value": 2
+				},
+				{
+					"name": "Redux",
+					"value": 1
+				},
+				{
+					"name": "Angular 2/4",
+					"value": 3
+				},
+				{
+					"name": "Vue",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"React",
+				"Redux",
+				"Scrum"
+			]
+		},
+		{
+			"id": "32451235",
+			"name": "Thomas Brown",
+			"position": "Frontend Developer",
+			"image": "https://randomuser.me/api/portraits/men/83.jpg",
+			"email": "thomas.brown@gmail.com",
+			"password": "12390412",
+			"favouriteBoards": [
+				"8",
+				"1",
+				"2",
+				"5"
+			],
+			"isHR": false,
+			"skills": [{
+					"name": "JavaScript",
+					"value": 4
+				},
+				{
+					"name": "CSS",
+					"value": 5
+				},
+				{
+					"name": "Vue",
+					"value": 4
+				},
+				{
+					"name": "Redux",
+					"value": 2
+				},
+				{
+					"name": "React",
+					"value": 2
+				}
+			],
+			"wantToLearn": [
+				"React",
+				"Redux",
+				"Angular 2/4"
+			]
+		},
+		{
+			"id": "12304925",
+			"name": "Katherine Steward",
+			"position": "Backend Developer",
+			"image": "https://randomuser.me/api/portraits/women/4.jpg",
+			"email": "katherinesteward@gmail.com",
+			"password": "78391821",
+			"favouriteBoards": [
+				"5",
+				"6",
+				"2",
+				"1"
+			],
+			"isHR": false,
+			"skills": [{
+					"name": "Node.js",
+					"value": 5
+				},
+				{
+					"name": "Mongo DB",
+					"value": 5
+				},
+				{
+					"name": "PHP",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"PHP",
+				"Python",
+				"C++"
+			]
+		},
+		{
+			"id": "68942093",
+			"name": "Vanessa Bates",
+			"position": "Project Manager",
+			"image": "https://randomuser.me/api/portraits/women/18.jpg",
+			"email": "vanessabates@gmail.com",
+			"password": "28031092",
+			"isHR": false,
+			"favouriteBoards": [
+				"4",
+				"3",
+				"2"
+			],
+			"skills": [{
+					"name": "SCRUM",
+					"value": 5
+				},
+				{
+					"name": "Agile",
+					"value": 5
+				},
+				{
+					"name": "Presentation",
+					"value": 4
+				},
+				{
+					"name": "Consulting",
+					"value": 3
+				}
+			],
+			"wantToLearn": [
+				"Presentation",
+				"Consulting",
+				"Administrative"
+			]
+		},
+		{
+			"id": "21309812",
+			"name": "Eva Fernandez",
+			"position": "HR Manager",
+			"image": "https://randomuser.me/api/portraits/women/1.jpg",
+			"email": "evafernandez@gmail.com",
+			"password": "0921381",
+			"favouriteBoards": [
+				"7",
+				"5",
+				"6",
+				"3"
+			],
+			"isHR": true,
+			"skills": [{
+					"name": "Recruitment",
+					"value": 5
+				},
+				{
+					"name": "Employer Branding",
+					"value": 3
+				},
+				{
+					"name": "Talent Management",
+					"value": 4
+				},
+				{
+					"name": "Onboarding",
+					"value": 3
+				},
+				{
+					"name": "Negotiations",
+					"value": 3
+				},
+				{
+					"name": "PR",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"Talent Management",
+				"Negotiations",
+				"Employer Branding"
+			]
+		},
+		{
+			"id": "2309831",
+			"name": "Anthony Lewis",
+			"position": "Project Manager",
+			"image": "https://randomuser.me/api/portraits/men/38.jpg",
+			"email": "anthonylewis@gmail.com",
+			"password": "21083721",
+			"isHR": false,
+			"favouriteBoards": [
+				"6",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "SCRUM",
+					"value": 3
+				},
+				{
+					"name": "Agile",
+					"value": 2
+				},
+				{
+					"name": "Presentation",
+					"value": 5
+				},
+				{
+					"name": "Consulting",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"Agile",
+				"SCRUM",
+				"Consulting"
+			]
+		},
+		{
+			"id": "2309331",
+			"name": "Terri Andrews",
+			"position": "SCRUM Master",
+			"image": "https://randomuser.me/api/portraits/women/49.jpg",
+			"email": "terriandrews@gmail.com",
+			"password": "43081293",
+			"isHR": false,
+			"favouriteBoards": [
+				"5",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "SCRUM",
+					"value": 5
+				},
+				{
+					"name": "Agile",
+					"value": 4
+				},
+				{
+					"name": "Presentation",
+					"value": 2
+				},
+				{
+					"name": "Consulting",
+					"value": 3
+				}
+			],
+			"wantToLearn": [
+				"Presentation",
+				"Consulting"
+			]
+		},
+		{
+			"id": "2309938",
+			"name": "Bob Robrets",
+			"position": "Fullstack Developer",
+			"image": "https://randomuser.me/api/portraits/men/68.jpg",
+			"email": "bobroberts@gmail.com",
+			"password": "79837182",
+			"isHR": false,
+			"favouriteBoards": [
+				"1",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "HTML",
+					"value": 5
+				},
+				{
+					"name": "JavaScript",
+					"value": 4
+				},
+				{
+					"name": "React",
+					"value": 5
+				},
+				{
+					"name": "Vue",
+					"value": 4
+				},
+				{
+					"name": "CSS",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"JavaScript",
+				"React",
+				"Vue"
+			]
+		},
+		{
+			"id": "23091111",
+			"name": "Tony Larson",
+			"position": "Mobile Developer",
+			"image": "https://randomuser.me/api/portraits/men/68.jpg",
+			"email": "tonylarson@gmail.com",
+			"password": "3801922",
+			"isHR": false,
+			"favouriteBoards": [
+				"1",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "Mobile Development",
+					"value": 5
+				},
+				{
+					"name": "React",
+					"value": 4
+				},
+				{
+					"name": "UI/UX",
+					"value": 5
+				},
+				{
+					"name": "Vue",
+					"value": 4
+				},
+				{
+					"name": "CSS",
+					"value": 3
+				}
+			],
+			"wantToLearn": [
+				"Mobile Development",
+				"React",
+				"Vue"
+			]
+		},
+		{
+			"id": "2309816",
+			"name": "Brandie Crawford",
+			"position": "Marketing Manager",
+			"image": "https://randomuser.me/api/portraits/women/98.jpg",
+			"email": "brandiecrawford@gmail.com",
+			"password": "79383471",
+			"isHR": false,
+			"favouriteBoards": [
+				"7",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "Marketing",
+					"value": 5
+				},
+				{
+					"name": "Copywriting",
+					"value": 4
+				},
+				{
+					"name": "Content Management",
+					"value": 3
+				},
+				{
+					"name": "Event Management",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"Copywriting",
+				"Content Management"
+			]
+		},
+		{
+			"id": "23098301",
+			"name": "Mike Cole",
+			"position": "Backend Developer",
+			"image": "https://randomuser.me/api/portraits/men/29.jpg",
+			"email": "mikecole@gmail.com",
+			"password": "2313981",
+			"isHR": false,
+			"favouriteBoards": [
+				"1",
+				"3",
+				"2"
+			],
+			"skills": [{
+					"name": "Node.js",
+					"value": 5
+				},
+				{
+					"name": "Java",
+					"value": 2
+				},
+				{
+					"name": "Mongo DB",
+					"value": 2
+				},
+				{
+					"name": "PHP",
+					"value": 3
+				}
+			],
+			"wantToLearn": [
+				"PHP",
+				"Java",
+				"Mongo DB"
+			]
+		},
+		{
+			"id": "2837102",
+			"name": "Anthony Lee",
+			"position": "Frontend Developent",
+			"image": "https://randomuser.me/api/portraits/men/59.jpg",
+			"email": "anthonylee@gmail.com",
+			"password": "42084177",
+			"isHR": false,
+			"favouriteBoards": [
+				"1",
+				"3",
+				"4"
+			],
+			"skills": [{
+					"name": "React",
+					"value": 5
+				},
+				{
+					"name": "JavaScript",
+					"value": 4
+				},
+				{
+					"name": "CSS",
+					"value": 3
+				},
+				{
+					"name": "HTML",
+					"value": 4
+				}
+			],
+			"wantToLearn": [
+				"HTML",
+				"CSS",
+				"JavaScript"
+			]
+		}
+	],
+	"boards": [{
+			"id": "1",
+			"name": "Frontend Development",
+			"icon": "code",
+			"skills": ["JavaScript", "Vue", "React", "CSS", "HTML"],
+			"author": {
+				"name": "Thomas Brown",
+				"id": "32451235",
+				"image": "https://randomuser.me/api/portraits/men/83.jpg"
+			},
+			"categories": [{
+					"name": "Progressive Web Apps",
+					"bookmarks": [{
+							"title": "Progressive Web Apps Checklist",
+							"description": "A checklist which breaks down all the things we think it takes to be a baseline progressive web app, and how to take it a step further with an exemplary progressive web app.",
+							"url": "https://developers.google.com/web/progressive-web-apps/checklist",
+							"favicon": "https://developers.google.com/_static/18908e5f48/images/touch-icon.png"
+						},
+						{
+							"title": "Crafting a PWA: Part 1 — Setting up the development workflow",
+							"description": "PWAs have been gaining popularity for quite sometime now. Crafting a good, performant experience is continuous journey.",
+							"url": "https://hackernoon.com/crafting-a-pwa-part-1-setting-up-the-development-workflow-705337695748",
+							"favicon": "https://cdn-images-1.medium.com/fit/c/128/128/1*76XiKOa05Yya6_CdYX8pVg.jpeg"
+						},
+						{
+							"title": "Your First Progressive Web App  |  Web Fundamentals  |  Google Developers",
+							"description": "In this codelab, you'll build a Progressive Web App, which loads quickly, even on flaky networks, has an icon on the homescreen, and loads as a top-level, full screen experience.",
+							"url": "https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/",
+							"favicon": "https://developers.google.com/_static/18908e5f48/images/touch-icon.png"
+						},
+						{
+							"title": "A selection of Progressive Web Apps",
+							"description": "A handful of nice examples showcasing what Progressive Web Apps can look like.",
+							"url": "https://pwa.rocks/",
+							"favicon": "https://pwa.rocks/favicon.ico"
+						}
+					]
+				},
+				{
+					"name": "Vue.js",
+					"bookmarks": [{
+							"title": "Introduction — Vue.js",
+							"description": "Vue.js - The Progressive JavaScript Framework",
+							"url": "https://vuejs.org/v2/guide/",
+							"favicon": "https://vuejs.org/images/icons/favicon-32x32.png"
+						},
+						{
+							"title": "The Vue.js Master Class",
+							"description": "In our Master Class you'll learn Vue.js by building a real-world application. Together we’ll create a complete forum from scratch using exciting technologies that synergize with Vue.",
+							"url": "https://vueschool.io/courses/the-vuejs-master-class",
+							"favicon": "https://vueschool.io/img/favicons/apple-touch-icon.png"
+						},
+						{
+							"title": "Bootstrap Vue",
+							"description": "Quickly integrate Bootstrap 4 components with Vue.js",
+							"url": "https://bootstrap-vue.js.org/",
+							"favicon": "https://bootstrap-vue.js.org/_nuxt/icons/icon_64.c00o00Z01E0.png"
+						},
+						{
+							"title": "Vue.js Newsletter - Revue",
+							"description": "Email digest of Vue-newsletter",
+							"url": "https://www.getrevue.co/profile/vuenewsletter",
+							"favicon": "https://d3jbm9h03wxzi9.cloudfront.net/assets/favicon-84fc7f228d52c2410eb7aa839e279caeaa491588c7c75229ed33e1c7f69fe75d.ico"
+						}
+					]
+				},
+				{
+					"name": "React",
+					"bookmarks": [{
+							"title": "Tutorial - Into to React",
+							"description": "A JavaScript library for building user interfaces",
+							"url": "https://reactjs.org/tutorial/tutorial.html",
+							"favicon": "https://reactjs.org/favicon.ico"
+						},
+						{
+							"title": "GitHub - facebook/react",
+							"description": "react - A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+							"url": "https://github.com/facebook/react",
+							"favicon": "https://assets-cdn.github.com/pinned-octocat.svg"
+						},
+						{
+							"title": "React-Bootstrap",
+							"description": "We are open to pull requests that address bugs, improve documentation, enhance accessibility, add test coverage, or bring us closer to feature parity with Bootstrap.",
+							"url": "https://react-bootstrap.github.io/",
+							"favicon": "https://reactjs.org/favicon.ico"
+						},
+						{
+							"title": "ReactJS Examples, Demos, Code",
+							"description": "Looking for ReactJS examples? React.rocks has over 950 searchable examples with screenshots, online demos and *code* :). More added every day.",
+							"url": "https://react.rocks/",
+							"favicon": "https://react.rocks/favicon-32x32.png"
+						}
+					]
+				},
+				{
+					"name": "JavaScript",
+					"bookmarks": [{
+							"title": "JavaScript.com",
+							"description": "Learn JavaScript and stay connected with the latest news created and curated by the JavaScript community.",
+							"url": "https://www.javascript.com/",
+							"favicon": "https://www.javascript.com/images/favicon.ico"
+						},
+						{
+							"title": "JS: The Right Way",
+							"description": "A quick reference to best practices for writing JavaScript -- links to code patterns and tutorials from around the web",
+							"url": "http://jstherightway.org/",
+							"favicon": "https://cdn2.iconfinder.com/data/icons/nodejs-1/256/nodejs-256.png"
+						},
+						{
+							"title": "JavaScript - Mozilla Developers",
+							"description": "JavaScript (JS) is a programming language mostly used client-side to dynamically script webpages, but often also server -side, using packages such as Node.js.",
+							"url": "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript",
+							"favicon": "https://cdn.mdn.mozilla.net/static/img/favicon144.e7e21ca263ca.png"
+						},
+						{
+							"title": "Introduction To JavaScript - Codecademy",
+							"description": "Codecademy is the easiest way to learn how to code. It's interactive, fun, and you can do it with your friends.",
+							"url": "https://www.codecademy.com/learn/introduction-to-javascript",
+							"favicon": "https://production.cdmycdn.com/favicon.ico"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2",
+			"name": "Inbound Marketing",
+			"icon": "bullseye",
+			"skills": ["Copywriting", "Marketing", "PR", "Content Management", "Event Management"],
+			"author": {
+				"name": "Brandie Crawford",
+				"id": "2309816",
+				"image": "https://randomuser.me/api/portraits/women/98.jpg"
+			},
+			"categories": [{
+				"name": "Content Marketing",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "3",
+			"name": "SEM",
+			"icon": "search",
+			"skills": ["Copywriting", "Marketing", "PR", "Content Management"],
+			"author": {
+				"name": "Brandie Crawford",
+				"id": "2309816",
+				"image": "https://randomuser.me/api/portraits/women/98.jpg"
+			},
+			"categories": [{
+				"name": "Search Engine Marketing",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "4",
+			"name": "Agile",
+			"icon": "clock",
+			"skills": ["SCRUM", "Agile", "Presentation", "Consulting"],
+			"author": {
+				"name": "Vanessa Bates",
+				"id": "68942093",
+				"image": "https://randomuser.me/api/portraits/women/18.jpg"
+			},
+			"categories": [{
+				"name": "SCRUM",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "5",
+			"name": "SCRUM",
+			"icon": "tasks",
+			"skills": ["SCRUM", "Agile", "Presentation", "Consulting"],
+			"author": {
+				"name": "Anthony Lewis",
+				"id": "2309831",
+				"image": "https://randomuser.me/api/portraits/men/38.jpg"
+			},
+			"categories": [{
+				"name": "Mastering SCRUM",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "6",
+			"name": "Backend Development",
+			"icon": "file-code",
+			"skills": ["nodejs", "mongo DB", "PHP", "Java"],
+			"author": {
+				"name": "Mike Cole",
+				"id": "2309831",
+				"image": "https://randomuser.me/api/portraits/men/29.jpg"
+			},
+			"categories": [{
+				"name": "Node.js",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "7",
+			"name": "Human Resources",
+			"icon": "handshake",
+			"skills": ["Recruitment", "Employer Branding", "Talent Management", "Onboarding", "Negotiations"],
+			"author": {
+				"name": "Eva Fernandez",
+				"id": "21309812",
+				"image": "https://randomuser.me/api/portraits/women/1.jpg"
+			},
+			"categories": [{
+				"name": "Talent Management",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "8",
+			"name": "Business Consultancy",
+			"icon": "briefcase",
+			"skills": ["Presentation", "Consulting", "Negotiations"],
+			"author": {
+				"name": "Anthony Lewis",
+				"id": "21083721",
+				"image": "https://randomuser.me/api/portraits/men/38.jpg"
+			},
+			"categories": [{
+				"name": "Business Practical Tips",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "9",
+			"name": "Strategic Management",
+			"icon": "chart-line",
+			"skills": ["Presentation", "Consulting", "Negotiations"],
+			"author": {
+				"name": "Vanessa Bates",
+				"id": "28031092",
+				"image": "https://randomuser.me/api/portraits/women/18.jpg"
+			},
+			"categories": [{
+				"name": "Business Practical Tips",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "10",
+			"name": "Negotiations",
+			"icon": "comments",
+			"skills": ["Presentation", "Consulting", "Negotiations"],
+			"author": {
+				"name": "Vanessa Bates",
+				"id": "28031092",
+				"image": "https://randomuser.me/api/portraits/women/18.jpg"
+			},
+			"categories": [{
+				"name": "Negotiating in Sales",
+				"bookmarks": [
+
+				]
+			}]
+		},
+		{
+			"id": "11",
+			"name": "Public Relations",
+			"icon": "newspaper",
+			"skills": ["Copywriting", "PR", "Content Management"],
+			"author": {
+				"name": "Brandie Crawford",
+				"id": "2309816",
+				"image": "https://randomuser.me/api/portraits/women/98.jpg"
+			},
+			"categories": [{
+				"name": "Public Relations",
+				"bookmarks": []
+			}]
+		},
+		{
+			"id": "12",
+			"name": "Code Best Practices",
+			"icon": "terminal",
+			"skills": ["JavaScript", "Vue", "React", "CSS", "HTML", "Node.js", "Java", "PHP", "Mongo DB"],
+			"author": {
+				"name": "Thomas Brown",
+				"id": "32451235",
+				"image": "https://randomuser.me/api/portraits/men/83.jpg"
+			},
+			"categories": [{
+				"name": "Code Guidebook",
+				"bookmarks": []
+			}]
+		}
   ],
-  "boards": [
+  "workshops": [
     {
-      "id": "1",
-      "name": "Social Media Marketing",
-      "isFavourite": true,
-      "icon": "bullhorn",
-      "author": {
-        "name": "Bradley Davis",
-        "id": "32453245",
-        "image": "https://randomuser.me/api/portraits/men/3.jpg"
-      },
-      "categories": [
-        {
-          "name": "Facebook",
-          "bookmarks": [
-            {
-              "title": "Some title",
-              "description": "Some description",
-              "url": "https://facebook.com",
-              "favicon": "https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"
-            },
-            {
-              "title": "Some title",
-              "description": "Some description",
-              "url": "https://facebook.com",
-              "favicon": "https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"
-            },
-            {
-              "title": "Some title",
-              "description": "Some description",
-              "url": "https://facebook.com",
-              "favicon": "https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"
-            },
-            {
-              "title": "Some title",
-              "description": "Some description",
-              "url": "https://facebook.com",
-              "favicon": "https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico"
-            }
-          ]
-        }
-      ]
+      "id": "101",
+      "isWorkshops": true,
+      "name": "Advanced React Trainning",
+      "description": "React Training was formed to support the development and maintenance of the most popular open source libraries in the React community including React Router and unpkg",
+      "atendees": [
+        "32453245",
+        "32451235",
+        "12390412",
+        "2837102"
+      ],
+      "maxAtendees": 15,
+      "date": "2018-02-17"
+    },
+    {
+      "id": "102",
+      "isWorkshops": true,
+      "name": "Agile - Certificated Workshop",
+      "description": "We run every workshop as an agile project, where you are the product owner. Add on the training modules your team needs most for a fully customized learning experience.",
+      "atendees": [
+        "68942093",
+        "28031092",
+        "2309331"
+      ],
+      "maxAtendees": 45,
+      "date": "2018-03-25"
+    },
+    {
+      "id": "103",
+      "isWorkshops": true,
+      "name": "GDPR - Preparation",
+      "description": "We run every workshop as an agile project, where you are the product owner. Add on the training modules your team needs most for a fully customized learning experience.",
+      "atendees": [
+        "68942093",
+        "21309812",
+        "2309831",
+        "2309816"
+      ],
+      "maxAtendees": 30,
+      "date": "2018-02-12"
+    },
+    {
+      "id": "104",
+      "isWorkshops": false,
+      "name": "Employer Branding - Brainstorm",
+      "description": "The Emergence of Talent Brand Your talent brand is the highly social, totally public version of your employer brand that incorporates what your talent",
+      "atendees": [
+        "21309812"
+      ],
+      "maxAtendees": 12,
+      "date": "2018-06-20"
+    },
+    {
+      "id": "105",
+      "isWorkshops": false,
+      "name": "Effective Communication Workshop",
+      "description": "The Communications Workshop is designed to help you better connect with people. The workshop provides an in-depth look at how you can design and improve your organization's communications.",
+      "atendees": [
+        "21309812",
+        "68942093",
+        "2309831",
+        "2309331"
+      ],
+      "maxAtendees": 25,
+      "date": "2018-03-10"
     }
   ]
 }
