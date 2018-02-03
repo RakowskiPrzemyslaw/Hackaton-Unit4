@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, ADD_BOOKMARK } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -32,5 +32,16 @@ export const getBoards = () => {
         payload: data,
       });
     });
+  };
+};
+
+export const addBookmark = (boardId, categoryName, bookmark) => {
+  return {
+    type: ADD_BOOKMARK,
+    payload: {
+      boardId,
+      categoryName,
+      bookmark,
+    },
   };
 };

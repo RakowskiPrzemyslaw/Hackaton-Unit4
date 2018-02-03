@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Input } from 'antd';
 import { colors, typography, boxShadow } from '../../utils/styles';
 
 export const Categories = styled.div`
@@ -52,7 +53,7 @@ export const IconWrapper = styled.div`
   height: 100%;
 `;
 
-export const Icon = styled.div`
+export const Favicon = styled.div`
   width: 16px;
   height: 16px;
   margin-right: 20px;
