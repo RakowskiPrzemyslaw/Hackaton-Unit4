@@ -36,7 +36,6 @@ export default class Employees extends Component {
 );
 
   render() {
-    console.log(this.props.userList);
     return (
       <Fragment>
         <Header>Employees</Header>

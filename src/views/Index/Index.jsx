@@ -16,7 +16,7 @@ const { Header, Content, Sider } = Layout;
 @connect(
   state => ({
     collapsed: state.ui.sidebar,
-    user: state.user
+    user: state.user,
   }),
   dispatch => bindActionCreators({ toggleSidebar, fetchUser }, dispatch),
 )
@@ -63,7 +63,6 @@ export default class Index extends Component {
   }
 
   render() {
-    console.log(this.props.user);
     return this.state.isLogin
     ? (
         <Fragment>
@@ -114,13 +113,14 @@ export default class Index extends Component {
                   <Icon type="desktop" />
                   <span>Knowledge</span>
                 </Item>
-                <SubMenu
-                  key="hrpanel"
-                  title={<span><Icon type="team" /><span>HR Panel</span></span>}
-                >
-                  <Item key="/employees">Employees</Item>
-                  <Item key="/stats">Stats</Item>
-                </SubMenu>
+                {this.props.user.isHR &&
+                  <SubMenu
+                    key="hrpanel"
+                    title={<span><Icon type="team" /><span>HR Panel</span></span>}
+                  >
+                    <Item key="/employees">Employees</Item>
+                  </SubMenu>
+                }
               </Menu>
             </Sider>
             <Layout style={{ marginLeft: this.props.collapsed ? 80 : 200, transition: 'all 0.3s' }}>

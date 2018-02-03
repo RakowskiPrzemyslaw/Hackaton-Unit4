@@ -60,7 +60,6 @@ export default class Dashboard extends Component {
   }
 
   render() {
-    console.log(this.props.user);
     return (
       <Fragment>
         <Header>Dashboard</Header>

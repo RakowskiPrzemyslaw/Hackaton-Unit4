@@ -34,7 +34,6 @@ export default class Events extends Component {
   }
 
   renderEvent = (event) => {
-    console.log(event);
     return (
       <Event id={event._id}>
         <Title>{event.name}</Title>

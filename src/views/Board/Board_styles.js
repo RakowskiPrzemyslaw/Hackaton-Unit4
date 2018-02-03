@@ -12,7 +12,7 @@ export const Categories = styled.div`
 export const Category = styled.div`
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: calc(33.333333% - 30px);
   border-radius: 4px;
   background-color: #fff;
   box-shadow: ${boxShadow};

@@ -24,7 +24,6 @@ export default class Events extends Component {
   }
 
   renderEvent = (event) => {
-    console.log(event);
     if (event.isWorkshops) {
       return (
         <Event id={event.id}>

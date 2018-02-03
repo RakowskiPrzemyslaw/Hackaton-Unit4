@@ -9,7 +9,7 @@ export const Boards = styled.div`
 
 export const Container = styled.div`
   display: flex;
-  width: 450px;
+  width: calc(33.333333% - 30px);
   height: 100px;
   border-radius: 4px;
   background-color: #fff;
