@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE,FETCH_USER_LIST } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -40,5 +40,20 @@ export const changeSkillLevel = (name, value, cb) => {
   return{
     type: SKILL_CHANGE,
     payload: { name, value, cb },
+  };
 };
-};
+
+export const fetchUserList = () => {
+  const url = `http://localhost:3000/users`;
+  const request = axios.get(url);
+
+
+  return (dispatch) => {
+    request.then(({ data }) => {
+      dispatch({
+        type: FETCH_USER_LIST,
+        payload: data,
+      });
+    });
+  };
+}
