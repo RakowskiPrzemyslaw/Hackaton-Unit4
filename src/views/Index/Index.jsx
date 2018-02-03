@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import { Layout, Icon, Button } from 'antd';
 import Menu from 'antd/es/menu';
 import { toggleSidebar, fetchUser } from '../../actions';
-import { getCookie } from '../../utils/cookies';
+import { getCookie, deleteCookie } from '../../utils/cookies';
 import { Container } from '../../utils/styledComponents';
 import { Logo, ProfilePic, ProfileName, Profile } from './Index_styles';
 
@@ -57,6 +57,10 @@ export default class Index extends Component {
       this.props.history.push(key);
     }
   }
+  logout = () => {
+    deleteCookie('id');
+    this.props.history.push('/login');
+  }
 
   render() {
     console.log(this.props.user);
@@ -73,7 +77,7 @@ export default class Index extends Component {
             <Profile>
               <ProfilePic src={this.props.user.image} />
               <ProfileName>{this.props.user.name}</ProfileName>
-              <Button type='dashed'>Logout</Button>
+              <Button type='dashed' onClick={this.logout}>Logout</Button>
             </Profile>
 
           </Header>

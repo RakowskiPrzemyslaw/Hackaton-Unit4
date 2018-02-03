@@ -60,6 +60,7 @@ export default class Login extends Component {
           />
           <StyledInput
             placeholder="Password"
+            type="password"
             prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
             suffix={suffixPassword}
           />
