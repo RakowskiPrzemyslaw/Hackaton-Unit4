@@ -1,4 +1,4 @@
-import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, ADD_BOOKMARK } from './types';
+import { TOGGLE_SIDEBAR, FETCH_USER, GET_BOARDS, SKILL_CHANGE,FETCH_USER_LIST, ADD_BOOKMARK } from './types';
 import axios from 'axios';
 
 export const toggleSidebar = () => ({
@@ -35,6 +35,7 @@ export const getBoards = () => {
   };
 };
 
+
 export const addBookmark = (boardId, categoryName, bookmark) => {
   return {
     type: ADD_BOOKMARK,
@@ -45,3 +46,26 @@ export const addBookmark = (boardId, categoryName, bookmark) => {
     },
   };
 };
+
+export const changeSkillLevel = (name, value, cb) => {
+  console.log(value);
+  return{
+    type: SKILL_CHANGE,
+    payload: { name, value, cb },
+  };
+};
+
+export const fetchUserList = () => {
+  const url = `http://localhost:3000/users`;
+  const request = axios.get(url);
+
+
+  return (dispatch) => {
+    request.then(({ data }) => {
+      dispatch({
+        type: FETCH_USER_LIST,
+        payload: data,
+      });
+    });
+  };
+}

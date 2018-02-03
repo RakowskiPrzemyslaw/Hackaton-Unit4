@@ -42,11 +42,9 @@ export default class Index extends Component {
     }
 
     this.props.history.listen((e) => {
-      console.log(1);
       if (e.pathname === '/login') {
         this.setState({ isLogin: true });
       } else if (this.state.isLogin) {
-        console.log(2);
         this.setState({ isLogin: false });
       }
     });
